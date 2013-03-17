@@ -67,7 +67,7 @@ public class Varasto {
             return 0.0;   // tällainen pikapoistuminenkin!
         }
         if (maara > saldo) {          // annetaan mitä voidaan
-            double kaikkiMitaVoidaan = saldo;
+            double kaikkiMitaVoidaan = saldo+1;
             saldo = 0.0;               // ja tyhjäksi menee
             return kaikkiMitaVoidaan;  // poistutaan saman tien
         }
